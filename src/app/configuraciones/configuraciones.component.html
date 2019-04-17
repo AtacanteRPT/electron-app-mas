@@ -1,0 +1,53 @@
+<div class="container">
+	<div class="config">	
+	<header>
+		<h1 class="titulo">CONFIGURACIONES</h1>
+		<div class="encabezado">
+		</div>
+	</header>
+	<nav>
+      <li>
+        <ul>
+          <a routerLink="">
+            <img src="./assets/img/atras.png">
+          </a>
+        </ul>
+      </li>
+    </nav>
+    <main>
+    	<div class="contenedorAjustes">
+	    	<form [formGroup]="form" (ngSubmit)="onSubmit()">
+		      <div class="form-group">
+		        <div>
+			        <label for="fondo"  class="custom btn-file-input" >
+			        	<input type="file" id="fondo" name="fondo" (change)="onFileChange($event)" #fileInput>
+			        	
+			        	<img src="assets/img/Upload.png">
+			        </label>
+			        <div *ngIf="fileArchivo" class="nameFile">{{fileArchivo.name}}</div>
+			        <label class="custom cambio">
+			          	<button type="submit" class="accent" > Cambiar fondo</button>
+			        </label>
+		        </div>
+
+		        
+		        <button type="button" class="restaurar" (click)="restaurar()"> Restaurar predeterminado</button>
+		        
+
+		      </div>
+		    </form>
+
+			</div>
+		</main>
+		<div class="contenedorAjustesAvanzado">
+			<app-visualizador-puertos></app-visualizador-puertos>
+			<button (click)="verAvanzados()" >Avanzado</button>
+		</div>
+
+		<div *ngIf="avanzados" class="contenedorAjustesAvanzado">
+			<app-config-avanzado></app-config-avanzado>
+		</div>
+	</div>
+
+</div>
+

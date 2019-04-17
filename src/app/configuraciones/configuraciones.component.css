@@ -1,0 +1,93 @@
+.container{
+	position: relative;
+	display: block;
+
+}
+.titulo{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+	padding-top: 27px;
+    padding-left: 16px;
+}
+.encabezado{
+	margin-top: -45px;
+    background-color: #00a4ff;
+    height: 50px;
+    width: 330px;
+    margin-left: 10px;
+}
+.contenedorAjustes{
+	margin-left: 10px;
+    height: 200px;
+    width: 80%;
+    background-color: #e2e2e2;
+
+}
+.contenedorAjustesAvanzado{
+	margin-top: 16px;
+	margin-left: 10px;
+    width: 80%;
+    background-color: #e2e2e2;
+
+}
+
+button{
+	border: 0px;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 4px 4px 4px 4px;
+}
+input[type="file" i]{
+	padding: 10px;	
+}
+.customSubir{
+	width: 100%;
+}
+
+.custom{
+	display: block;
+	margin: 0px auto;
+}
+.cambio{
+	width:78px;
+}
+.nameFile{
+	text-align: center;
+	font-family: Arial;
+	color: black;
+}
+.btn-file-input{
+	display: block;
+    width: 107px;
+    height: 98px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.btn-file-input > input[type="file"]{
+	font-size: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+.accent{
+	background-color: #54a5f5;
+	color: white;
+}
+
+.restaurar{
+	position: relative;
+    top: -160px;
+    left: 10px;
+    background-color: #38f381;
+    color: white;
+}
+
+.config{
+	margin-left: 36px;
+    padding-top: 25px;
+}

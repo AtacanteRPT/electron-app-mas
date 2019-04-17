@@ -1,0 +1,113 @@
+<div>
+    <br>
+    <br>
+    <br>
+    <header cl ass="">
+        <!--<img class="headers" src="./assets/img/cabecera.png">-->
+        <div class="fondoHeader">
+            <!--<img class="pullRight" src="./assets/img/logo.png" width="190" height="230">-->
+            <div class="linea img">
+                <img class="logo" src="./assets/img/Movimiento_al_Socialismo.png" width="180" height="140">
+            </div>
+            <div *ngIf="titulo">
+                <div class="linea title">
+                    <div class="textCenter">
+                        <h4 class="tituloIns">{{tipoInstitucion}}</h4>
+                        <h2 class="tituloIns">{{nombreSecundario}} </h2>
+                        <h1 class="tituloIns">{{nombrePrimario}} </h1>
+                    </div>
+                </div>
+                <div class="tituloHeader textCenter">CONTROL DE INGRESO</div>
+            </div>
+            <div *ngIf="!titulo">
+                <!--<img src="./assets/img/titulo.png" class="tituloIMG">-->
+            </div>
+        </div>
+    </header>
+    <nav>
+        <li>
+            <ul>
+                <a routerLink="configuraciones">
+                    <img src="./assets/img/config_100px.png">
+                </a>
+            </ul>
+        </li>
+    </nav>
+    <section>
+        <div *ngIf="perfil.rol !== 'tutor'">
+            <app-perfil-estudiante [perfil]="perfil"></app-perfil-estudiante>
+        </div>
+
+        <div *ngIf="perfil.rol === 'tutor'">
+            <div class="tituloPadre">
+                {{perfil.nombre +' '+perfil.paterno+' '+perfil.materno }}
+            </div>
+            <div class="flex-container">
+                <div class="card" *ngFor="let child of perfil.alumnos">1
+                    <img class="imgFlex" [src]="child.img">
+                    <div class="body-card">
+                        {{child.nombre +' '+child.paterno+' '+child.materno }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container center" >
+        <div  class="ancho60">
+          <div  class="center campos">
+  
+            <div class="casilla campoLn " >
+              <div >
+                <div >
+                  <h3  class=" matricula textCenter degra" > NÚMERO DE MATRÍCULA</h3>
+                </div>
+                <div >
+                    <h3 class="matricula textCenter fondo fontBlack " ><div class="mid"><div class="cntt">{{perfil.identificacion}}</div></div></h3>
+                </div>
+              </div>
+                
+            </div>
+            <div  class="datos">
+                <div class="casilla" >
+                  <div>
+                    <h3 class="titulo degra">APELLIDOS Y NOMBRES</h3>  
+                  </div>
+                  <p class="campo fontBlack ">{{perfil.paterno | uppercase }} {{perfil.materno | uppercase }} {{perfil.nombre | uppercase }}.</p>  
+                </div>
+                <div class="casilla" >
+                  <h3 class="titulo degra">CURSO</h3>  
+                  <p class="campo fontBlack">{{perfil.curso | uppercase }}.</p>  
+                </div>
+                <div class="casilla" >
+                  <h3 class="titulo degra">TURNO</h3>  
+                  <p class="campo fontBlack">{{perfil.turno | uppercase }}.</p>  
+                </div>
+                <div class="casilla" >
+                  <div class="casillad" >
+                    <h3 class="titulo degra">INGRESO</h3>  
+                    <p class="campo fontBlack">{{perfil.hora_llegada}} Hrs.</p>  
+                  </div>
+                  <div class="casillad" >
+                    <h3 class="titulo degra">SALIDA</h3>  
+                    <p class="campo fontBlack">{{perfil.hora_salida}} Hrs.</p>  
+                  </div>  
+                </div>
+            </div>
+          </div>
+        </div>
+        <div  class="ancho40">
+          
+          <div class="bloqueimg">
+            <img [src]="perfil.img ? perfil.img : './assets/img/people.png'" alt="">
+          </div>
+          <div *ngIf="perfil.tutores"  class="datos">
+
+            <div class="casilla" *ngFor="let tutor of perfil.tutores ; let i=index" >
+              <h3 class="titulo degra">Tutor {{i}}</h3>  
+              <p class="campo fontBlack">{{tutor }} .</p>  
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <footer class="foot"></footer>
+</div>

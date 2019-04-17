@@ -1,0 +1,61 @@
+<div class="container center">
+    <div class="ancho60">
+        <div class="center campos">
+
+            <div class="casilla campoLn ">
+                <div>
+                    <div>
+                        <h3 class=" matricula textCenter degra"> NÚMERO DE MATRÍCULA</h3>
+                    </div>
+                    <div>
+                        <h3 class="matricula textCenter fondo fontBlack ">
+                            <div class="mid">
+                                <div class="cntt">{{perfil.identificacion}}</div>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="datos">
+                <div class="casilla">
+                    <div>
+                        <h3 class="titulo degra">APELLIDOS Y NOMBRES</h3>
+                    </div>
+                    <p class="campo fontBlack ">{{perfil.paterno | uppercase }} {{perfil.materno | uppercase }} {{perfil.nombre | uppercase }}.</p>
+                </div>
+                <div class="casilla">
+                    <h3 class="titulo degra">CIRCUNSCRIPCIÓN</h3>
+                    <p class="campo fontBlack">{{perfil.curso | uppercase }}.</p>
+                </div>
+                <div class="casilla">
+                    <h3 class="titulo degra">ZONA</h3>
+                    <p class="campo fontBlack">{{perfil.turno | uppercase }}.</p>
+                </div>
+                <div class="casilla">
+                    <div class="casillad">
+                        <h3 class="titulo degra">INGRESO</h3>
+                        <p class="campo fontBlack">{{perfil.hora_llegada}} Hrs.</p>
+                    </div>
+                    <div class="casillad">
+                        <h3 class="titulo degra">SALIDA</h3>
+                        <p class="campo fontBlack">{{perfil.hora_salida}} Hrs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ancho40">
+
+        <div class="bloqueimg">
+            <img [src]="perfil.img ? perfil.img : './assets/img/people.png'" alt="">
+        </div>
+        <div *ngIf="perfil.tutores" class="datos">
+
+            <div class="casilla" *ngFor="let tutor of perfil.tutores ; let i=index">
+                <h3 class="titulo degra">Tutor {{i}}</h3>
+                <p class="campo fontBlack">{{tutor.nombre +' '+tutor.paterno+' '+tutor.materno }} .</p>
+            </div>
+        </div>
+    </div>
+</div>

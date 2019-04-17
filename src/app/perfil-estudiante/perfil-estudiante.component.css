@@ -1,0 +1,302 @@
+.headers {
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 200px;
+}
+
+.tituloIMG {
+    width: 49%;
+    height: 170px;
+    margin-left: 14%;
+    margin-top: -14px;
+}
+
+.pullRight {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    margin-left: 70%;
+    float: right;
+}
+
+.fondoHeader {
+    position: relative;
+    top: 20px;
+    /* background-color: rgba(0, 0, 0, 0.459); */
+    margin-bottom: 20px;
+    height: 110px;
+}
+
+h1.tituloIns {
+    font-size: 40px;
+}
+
+.matricula {
+    display: block;
+    float: left;
+    width: 170px;
+    height: 60px;
+    padding: 10px;
+    margin: 15px 5px;
+    background: #143a83;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.tituloHeader {
+    width: 100%;
+    background: #143a83;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.linea {
+    display: inline-block;
+}
+
+.img {
+    width: 20%;
+}
+
+.mid {
+    margin: 0px auto;
+    display: table;
+    height: 100%;
+}
+
+.cntt {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo {
+    position: absolute;
+    left: 10%;
+    margin-top: -40px;
+}
+
+.title {
+    width: 100%;
+}
+
+.tituloIns {
+    margin: 0px;
+    font-family: 'Bellefair', serif;
+}
+
+.bloque {
+    /* position: relative;
+    top: 60px;
+    left: 28px; */
+    margin: auto;
+}
+
+.bloqueimg {
+    position: relative;
+    top: 50px;
+    width: auto;
+}
+
+.bloqueimg img {
+    /* position: relative;
+    top: 50px; */
+    display: block;
+    width: auto;
+    height: 300px;
+    margin: 0px auto;
+}
+
+.registro {
+    display: block;
+    float: left;
+    width: 170px;
+    height: 60px;
+    padding: 10px;
+    margin: 15px 5px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.centers {
+    margin: auto;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.campoLn {
+    margin-bottom: 20px;
+}
+
+.fontBlack {
+    color: black;
+}
+
+.enlinea {
+    display: inline;
+}
+
+.datos {
+    clear: left;
+    margin-top: 15px;
+}
+
+.titulo {
+    border-radius: 15px 15px 0px 0px;
+    margin: auto;
+    background: red;
+    width: max-content;
+    padding: 5px 1.5em;
+}
+
+.degra {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#143a83+0,8285b5+4,143a83+25,143a83+100 */
+    background: #143a83;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #143a83 0%, #8285b5 4%, #143a83 25%, #143a83 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #143a83 0%, #8285b5 4%, #143a83 25%, #143a83 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #143a83 0%, #8285b5 4%, #143a83 25%, #143a83 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#143a83', endColorstr='#143a83', GradientType=0);
+    /* IE6-9 */
+}
+
+.campo {
+    border-radius: 8px;
+    text-align: center;
+    background: rgba(207, 216, 223, 0.603);
+    width: 100%;
+    padding: 5px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.fondo {
+    background: rgba(207, 216, 223, 0.603);
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.tituloES {
+    border-radius: 15px 15px 0px 0px;
+    margin: auto;
+    background: red;
+    width: max-content;
+    padding: 5px 1.5em;
+    font-size: 16px;
+}
+
+.campoES {
+    border-radius: 8px;
+    text-align: center;
+    background: rgba(207, 216, 223, 0.603);
+    width: 100%;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.campos {
+    width: 400px;
+}
+
+.casilla {
+    margin: 0px;
+    margin-top: 4px;
+    display: block;
+}
+
+.casillad {
+    display: inline-block;
+    width: 44%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.container {
+    margin-top: 6%;
+    width: 90%;
+}
+
+.containertotal {
+    width: 100%;
+}
+
+.center {
+    margin: 2% auto;
+    padding: 20px;
+}
+
+.ancho60 {
+    display: block;
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+.ancho40 {
+    display: block;
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.ancho50 {
+    width: 50%;
+}
+
+header {
+    width: 100%;
+    height: 160px;
+}
+
+.fullHeight {
+    height: 100%;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.foot {
+    clear: left;
+}
+
+@media only screen and (max-width:950px) {
+    .ancho60 {
+        clear: left;
+        width: 100%;
+    }
+    .ancho40 {
+        clear: left;
+        width: 100%;
+    }
+    .campos {
+        width: 250px;
+    }
+    .logo {
+        margin-top: -25px;
+        width: 128px;
+        height: 152px
+    }
+    .campoLn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .matricula {
+        margin: 15px 35px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .logo {
+        left: 0%;
+        margin-top: -17px;
+        width: 100px;
+        height: 132px;
+    }
+}

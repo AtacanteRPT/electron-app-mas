@@ -1,0 +1,12 @@
+<div>
+  <h3 class="titulo"> 
+    Visualizador de Puertos
+  </h3>
+  <label class="estado">Conectado <span class="actived box" ></span></label>
+  <label class="estado">Desconectado <span class="n-actived box"></span></label>
+</div>
+<div class="contentFlex">
+  <div *ngFor="let puerto of puertos" [class]=" puerto.isActive ? 'actived':'n-actived'" (click)="activarPort(puerto)" >
+    {{puerto.name}}
+  </div>
+</div>

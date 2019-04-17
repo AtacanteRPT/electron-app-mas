@@ -1,0 +1,6 @@
+<div class="full" [ngStyle]="{'background': '#fff url(' + imgBackground + ') repeat 0 0 ','color':'#fff'}" >
+    <router-outlet ></router-outlet>
+</div>
+<div *ngIf="swProtector" class="protector">
+    <img class="full protector-img" src="assets/img/protector.jpg"  >
+</div>

@@ -1,0 +1,76 @@
+<div>
+    <h2 class="titulo">Configuraciones avanzadas</h2>
+    <div>
+        <div>
+            <div>
+                <label class="titulo" for="server"> Direccion de SERVER</label>
+                <input type="text" id="server" [(ngModel)]="pathServer">
+                <button (click)="postServerUrl()">Cambiar</button>
+            </div>
+            <div>
+                <label class="titulo" for="serverImg"> Direccion de Server IMAGE</label>
+                <input type="text" id="serverImg" [(ngModel)]="pathServerImg">
+                <button (click)="postServerImg()">Cambiar</button>
+            </div>
+
+            <div>
+                <label class="titulo" for="server"> Seleccionar Evento</label>
+                <select [(ngModel)]="selectedValue">
+                  <option *ngFor="let evento of eventos" [ngValue]="evento">{{evento.nombre}}</option>
+                </select>
+                <button (click)="guardarEvento()">Actualizar</button>
+            </div>
+        </div>
+        <div>
+            <h3 class="titulo actualizar">Puertos registrados</h3>
+
+            <button class="actualizar" (click)="getPortsConnected()">portRegistrados</button>
+            <table class="table portRegistrados">
+                <thead>
+                    <th>PORT COM</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let port of portsRegistred">
+                        <td>{{port}} </td>
+                        <td>
+                            <button (click)="deletePuerto(port)">Eliminar</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3 class="titulo actualizar ">Lista de dispositivos conectados </h3>
+            <span class="actualizar"><button type="button" (click)="getPorts()" > Actualizar</button></span>
+        </div>
+        <div>
+            <table class="table">
+                <thead>
+                    <th>PORT COM</th>
+                    <th>Manufactura</th>
+                    <th>Serie</th>
+                    <th>Vendor ID</th>
+                    <th>Product ID</th>
+                    <th>Activado</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let port of ports">
+                        <td>{{port.comName}} </td>
+                        <td>{{port.manufacturer}} </td>
+                        <td>{{port.serialNumber}} </td>
+                        <td>{{port.vendorId}} </td>
+                        <td>{{port.productId}} </td>
+                        <td *ngIf="port.isActived">Activado </td>
+                        <td *ngIf="!port.isActived">
+                            <button (click)="postPuerto(port)">Activar</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

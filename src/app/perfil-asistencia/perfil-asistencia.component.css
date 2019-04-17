@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Bellefair');
+.headers {
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 200px;
+}
+
+.tituloIMG {
+    width: 49%;
+    height: 170px;
+    margin-left: 14%;
+    margin-top: -14px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.pullRight {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    margin-left: 70%;
+    float: right;
+}
+
+.fondoHeader {
+    position: relative;
+    top: 20px;
+    background-color: rgba(0, 0, 0, 0.459);
+    margin-bottom: 20px;
+    height: 110px;
+}
+
+h1.tituloIns {
+    font-size: 40px;
+}
+
+.tituloHeader {
+    width: 100%;
+    background: #143a83;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.linea {
+    display: inline-block;
+}
+
+.img {
+    width: 20%;
+}
+
+.mid {
+    margin: 0px auto;
+    display: table;
+    height: 100%;
+}
+
+.cntt {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo {
+    position: absolute;
+    left: 10%;
+    margin-top: -40px;
+    -webkit-box-shadow: 0 8px 10px -10px black;
+    -moz-box-shadow: 0 8px 10px -10px black;
+    box-shadow: 0 8px 10px -10px black;
+}
+
+.title {
+    width: 100%;
+}
+
+.tituloIns {
+    margin: 0px;
+    font-family: 'Bellefair', serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.card {
+    width: 245px;
+    height: 290px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0px 3px;
+}
+
+.imgFlex {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 5px auto 0px auto;
+}
+
+.body-card {
+    color: black;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    font-size: 1.25em;
+    margin-top: 12px;
+}
+
+.tituloPadre {
+    margin-top: 90px;
+    text-align: center;
+    color: white;
+    background-color: #143a83;
+    font-size: 1.4em;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 440px) {
+    .logo {
+        left: 0%;
+        margin-top: -17px;
+        width: 100px;
+        height: 132px;
+    }
+}
